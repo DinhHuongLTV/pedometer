@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"testpedo\startup_stm32f103xb.o"
+"testpedo\i2c-lcd.o"
+"testpedo\main.o"
+"testpedo\stm32f1xx_it.o"
+"testpedo\stm32f1xx_hal_msp.o"
+"testpedo\stm32f1xx_hal_gpio_ex.o"
+"testpedo\stm32f1xx_hal_i2c.o"
+"testpedo\stm32f1xx_hal.o"
+"testpedo\stm32f1xx_hal_rcc.o"
+"testpedo\stm32f1xx_hal_rcc_ex.o"
+"testpedo\stm32f1xx_hal_gpio.o"
+"testpedo\stm32f1xx_hal_dma.o"
+"testpedo\stm32f1xx_hal_cortex.o"
+"testpedo\stm32f1xx_hal_pwr.o"
+"testpedo\stm32f1xx_hal_flash.o"
+"testpedo\stm32f1xx_hal_flash_ex.o"
+"testpedo\stm32f1xx_hal_exti.o"
+"testpedo\stm32f1xx_hal_tim.o"
+"testpedo\stm32f1xx_hal_tim_ex.o"
+"testpedo\system_stm32f1xx.o"
+--strict --scatter "testPedo\testPedo.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "testPedo.map" -o testPedo\testPedo.axf
